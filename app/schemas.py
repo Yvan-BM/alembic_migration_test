@@ -4,6 +4,7 @@ class Item(BaseModel):
     id: int
     name: str
     price: PositiveFloat
+    quantity: PositiveInt
 
 
 class ItemCreate(BaseModel):
