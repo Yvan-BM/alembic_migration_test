@@ -1,0 +1,12 @@
+venv
+.vscode
+__pycache__/
+*.pyc
+*.db
+.DS_Store
+.env
+.env.test
+kera_env
+bin
+docker-compose.local.yml
+_tests_back
