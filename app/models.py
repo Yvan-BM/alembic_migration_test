@@ -14,3 +14,4 @@ class Item(Base):
     group: Mapped[int] = mapped_column(nullable=True)
     designation: Mapped[str] = mapped_column(nullable=True)
     section: Mapped[str] = mapped_column(nullable=True)
+    label: Mapped[str] = mapped_column(nullable=True)
