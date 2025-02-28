@@ -7,10 +7,11 @@ load_dotenv()
 
 DB_USERNAME = os.getenv('DB_USERNAME')
 DB_PASSWORD = os.getenv('DB_PASSWORD')
-DB_USERNAME = os.getenv('DB_USERNAME')
+DB_NAME = os.getenv('DB_NAME')
+DB_SERVER_ADDRESS = os.getenv('DB_SERVER_ADDRESS')
 
 # Replace with your own PostgreSQL instance
-DATABASE_URL = f'postgresql://{DB_USERNAME}:{DB_PASSWORD}@localhost/{DB_USERNAME}'
+DATABASE_URL = f'postgresql://{DB_USERNAME}:{DB_PASSWORD}@{DB_SERVER_ADDRESS}/{DB_NAME}'
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(bind=engine)
