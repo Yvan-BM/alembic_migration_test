@@ -15,3 +15,9 @@ class Item(Base):
     designation: Mapped[str] = mapped_column(nullable=True)
     section: Mapped[str] = mapped_column(nullable=True)
     label: Mapped[str] = mapped_column(nullable=True)
+
+class User(Base):
+    __tablename__ = 'user'
+
+    id : Mapped[int] = mapped_column(primary_key=True)
+    first_name: Mapped[str] = mapped_column(nullable=False)
