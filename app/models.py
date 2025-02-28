@@ -13,3 +13,4 @@ class Item(Base):
     quantity: Mapped[int] = mapped_column(server_default='0')
     group: Mapped[int] = mapped_column(nullable=True)
     designation: Mapped[str] = mapped_column(nullable=True)
+    section: Mapped[str] = mapped_column(nullable=True)
