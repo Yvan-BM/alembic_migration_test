@@ -21,5 +21,6 @@ class User(Base):
 
     id : Mapped[int] = mapped_column(primary_key=True)
     first_name: Mapped[str] = mapped_column(nullable=False)
+    age: Mapped[int] = mapped_column(nullable=True)
     last_name: Mapped[str] = mapped_column(nullable=False)
     status: Mapped[str] = mapped_column(nullable=True)
