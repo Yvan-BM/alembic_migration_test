@@ -10,3 +10,4 @@ class Item(Base):
     id: Mapped[int] = mapped_column(primary_key=True)
     name: Mapped[str] = mapped_column(nullable=False)
     price: Mapped[float] = mapped_column(server_default='0')
+    quantity: Mapped[int] = mapped_column(server_default='0')
