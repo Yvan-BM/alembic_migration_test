@@ -12,3 +12,4 @@ class Item(Base):
     price: Mapped[float] = mapped_column(server_default='0')
     quantity: Mapped[int] = mapped_column(server_default='0')
     designation: Mapped[str] = mapped_column(nullable=True)
+    section: Mapped[str] = mapped_column(nullable=True)
